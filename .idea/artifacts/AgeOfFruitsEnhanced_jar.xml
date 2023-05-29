@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="AgeOfFruitsEnhanced:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/AgeOfFruitsEnhanced_jar</output-path>
+    <root id="archive" name="AgeOfFruitsEnhanced.jar">
+      <element id="module-output" name="AgeOfFruitsEnhanced" />
+    </root>
+  </artifact>
+</component>
