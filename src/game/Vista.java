@@ -74,6 +74,8 @@ public class Vista {
 
                     AdministrarColonos.compruebaCredenciales();
 
+                    ControlDeJuego.getGameOver();
+
                     puedePasarTurno = false;
 
                 }

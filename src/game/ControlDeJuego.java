@@ -91,4 +91,11 @@ public class ControlDeJuego {
         return turnoGlobal;
     }
 
+    public static void getGameOver(){
+        if(AdministrarColonos.getCantidadColonos()==0){
+            System.out.println("Te has quedado sin colonos. Sin ellos, tu asentamiento no puede prosperar.\n        ***** GAME OVER *****");
+            System.exit(0);
+        }
+    }
+
 }
