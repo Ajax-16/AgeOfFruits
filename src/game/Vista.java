@@ -277,9 +277,9 @@ public class Vista {
 
                                                 if (!AdministrarColonos.listaColonosContratados.isEmpty()) {
 
-                                                    System.out.println("Colonos disponibles para la construcción: ");
+                                                    System.out.println("***** Colonos de " + nombreColonia + ": ");
 
-                                                    System.out.println(AdministrarColonos.muestraIDnombreColonosDisponibles());
+                                                    System.out.println(AdministrarColonos.muestraIDnombreColonos());
 
                                                     System.out.print("Introduce el ID de un colono para que realice la construcción: ");
 
@@ -292,6 +292,8 @@ public class Vista {
                                                     if (!AdministrarColonos.listaColonosContratados.get(ID - 1).ocupado) {
 
                                                         System.out.println("***** Selecciona la ubicación de la nueva construcción *****");
+
+                                                        mapaColonia.muestraColonia();
 
                                                         String confirmacion = "";
 
@@ -396,6 +398,10 @@ public class Vista {
 
                                                 if (!AdministrarColonos.listaColonosContratados.isEmpty()) {
 
+                                                    System.out.println("***** Colonos de " + nombreColonia + ": ");
+
+                                                    System.out.println(AdministrarColonos.muestraIDnombreColonos());
+
                                                     System.out.print("Introduce el ID de un colono para que realice la construcción: ");
 
                                                     String id = "";
@@ -406,17 +412,11 @@ public class Vista {
 
                                                     if (!AdministrarColonos.listaColonosContratados.get(ID - 1).ocupado) {
 
-                                                        AdministrarColonos.rayaConsola();
-
-                                                        System.out.println("Actualmente tienes " + Madera.getCantidadMadera() + " de madera");
-
-                                                        System.out.println("El colono " + AdministrarColonos.listaColonosContratados.get(ID - 1).getNombre() + " " + AdministrarColonos.listaColonosContratados.get(ID - 1).getApellido() + " tiene "
-                                                                + AdministrarColonos.listaColonosContratados.get(ID - 1).energia + " de energia y " + AdministrarColonos.listaColonosContratados.get(ID - 1).cordura
-                                                                + " de cordura");
-
                                                         AdministrarColonos.raya();
 
                                                         System.out.println("***** Selecciona la ubicación de la nueva construcción *****");
+
+                                                        mapaColonia.muestraColonia();
 
                                                         String confirmacion = "";
 
@@ -516,6 +516,10 @@ public class Vista {
 
                                                 if (!AdministrarColonos.listaColonosContratados.isEmpty()) {
 
+                                                    System.out.println("***** Colonos de " + nombreColonia + ": ");
+
+                                                    System.out.println(AdministrarColonos.muestraIDnombreColonos());
+
                                                     System.out.print("Introduce el ID de un colono para que realice la construcción: ");
 
                                                     String id = "";
@@ -526,17 +530,9 @@ public class Vista {
 
                                                     if (!AdministrarColonos.listaColonosContratados.get(ID - 1).ocupado) {
 
-                                                        AdministrarColonos.rayaConsola();
-
-                                                        System.out.println("Actualmente tienes " + Madera.getCantidadMadera() + " de madera");
-
-                                                        System.out.println("El colono " + AdministrarColonos.listaColonosContratados.get(ID - 1).getNombre() + " " + AdministrarColonos.listaColonosContratados.get(ID - 1).getApellido() + " tiene "
-                                                                + AdministrarColonos.listaColonosContratados.get(ID - 1).energia + " de energia y " + AdministrarColonos.listaColonosContratados.get(ID - 1).cordura
-                                                                + " de cordura");
-
-                                                        AdministrarColonos.raya();
-
                                                         System.out.println("***** Selecciona la ubicación de la nueva construcción *****");
+
+                                                        mapaColonia.muestraColonia();
 
                                                         String confirmacion = "";
 
